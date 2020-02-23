@@ -4,8 +4,13 @@
   "virtualRouterName": "customer-vr",
 
   "spec": {
-    "serviceNames": [
-      "customer.default.svc.cluster.local"
-    ]
+    "listeners": [
+      {
+        "portMapping": {
+          "port": 5000,
+          "protocol": "http"
+        }
+      }
+  ]
   }  
 }

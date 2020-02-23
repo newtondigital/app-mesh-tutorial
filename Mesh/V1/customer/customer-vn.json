@@ -15,7 +15,7 @@
 
     "serviceDiscovery": {
       "dns": {
-        "serviceName": "customer.default.svc.cluster.local"
+        "hostname": "customer.default.svc.cluster.local"
       }
       
     }

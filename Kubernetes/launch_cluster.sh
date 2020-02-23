@@ -1,6 +1,5 @@
 eksctl create cluster \
-	--kubeconfig "/Users/janakiramm/.kube/config" \
-	--name "jani-mi2-demo" \
+	--name "appmesh-services" \
 	--nodes 1 \
-	--node-type "t2.medium" \
-	--region "us-west-2"
+	--node-type "m5.large" \
+	--region "ap-southeast-2"

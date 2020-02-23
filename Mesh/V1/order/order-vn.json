@@ -6,8 +6,16 @@
   "spec": {
 
     "backends": [
-      "product.default.svc.cluster.local",
-      "customer.default.svc.cluster.local"
+      {
+        "virtualService": {
+          "virtualServiceName": "product.default.svc.cluster.local"
+        }
+      }, 
+      {
+        "virtualService": {
+          "virtualServiceName": "customer.default.svc.cluster.local"
+        }
+        }
     ],
     
     "listeners": [
@@ -21,7 +29,7 @@
 
     "serviceDiscovery": {
       "dns": {
-        "serviceName": "order.default.svc.cluster.local"
+        "hostname": "order.default.svc.cluster.local"
       }
       
     }
