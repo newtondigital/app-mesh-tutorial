@@ -1,0 +1,16 @@
+Kubernetes
+
+kubectl exec -it order-5bc9c59fb7-75dst -c order -- netstat -tnlp
+
+kubectl get pods
+kubectl get svc
+
+# List containers in pod
+kubectl get pods order-5bc9c59fb7-75dst -o jsonpath='{.spec.containers[*].name}'
+
+# Get logs
+ kubectl logs order-5bc9c59fb7-75dst -c order
+ 
+ 
+ 
+curl http://ac7dc788e568311eaa2c406f432772ff-1544357773.ap-southeast-2.elb.amazonaws.com
